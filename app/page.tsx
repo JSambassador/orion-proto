@@ -3,101 +3,223 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+     <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">ORION</a>
+            <ul class="nav-links">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Quote</a>
+        </nav>
+    </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Safety & Process Reliability for Industry</h1>
+                    <p class="subtitle">Delivering proven gas detection, leak monitoring, and process equipment solutions since 1991. Trusted by industry leaders across Ukraine and beyond.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2,500+</span>
+                            <span class="stat-label">Product Variants</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Enterprise Clients</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#solutions" class="cta-button">Explore Solutions</a>
+                        <a href="#contact" class="cta-button-secondary">Request Demo</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="device-showcase pulse">
+                        <div class="device-placeholder">
+                            DOZOR-S Series<br>Gas Analyzer
+                        </div>
+                        <h3>DOZOR-S Series</h3>
+                        <p>Microprocessor-based gas analyzers with 150+ detectable substances</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <p class="trust-title">Trusted by Industry Leaders</p>
+                <div class="client-logos">
+                    <div class="client-logo">UKRTRANSGAZ</div>
+                    <div class="client-logo">MOTORSICH JSC</div>
+                    <div class="client-logo">KRIVOROZHSTAL</div>
+                    <div class="client-logo">UKRTELECOM</div>
+                    <div class="client-logo">UKRTATNAFTA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Safety & Process Solutions</h2>
+                <p class="section-subtitle">From gas detection to process optimization, we deliver integrated solutions that protect your people, assets, and operations.</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">🔍</div>
+                    <h3 class="solution-title">Gas Detection</h3>
+                    <p class="solution-description">Advanced DOZOR-S series analyzers for combustible and toxic gases with microprocessor-based precision.</p>
+                    <ul class="solution-features">
+                        <li>150+ detectable substances</li>
+                        <li>Stationary, portable & individual units</li>
+                        <li>Real-time monitoring & alerts</li>
+                        <li>Certified for industrial use</li>
+                    </ul>
+                    <a href="#" class="solution-link">Learn More →</a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">💧</div>
+                    <h3 class="solution-title">Leak Detection</h3>
+                    <p class="solution-description">Precise leak detection systems for early identification and prevention of costly industrial incidents.</p>
+                    <ul class="solution-features">
+                        <li>High-sensitivity detection</li>
+                        <li>Multiple sensing technologies</li>
+                        <li>Automated alarm systems</li>
+                        <li>Remote monitoring capability</li>
+                    </ul>
+                    <a href="#" class="solution-link">Learn More →</a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">📊</div>
+                    <h3 class="solution-title">Flow Measurement</h3>
+                    <p class="solution-description">Accurate flow measurement systems (DOZOR-S-M-10) for process control and optimization.</p>
+                    <ul class="solution-features">
+                        <li>Precision measurement</li>
+                        <li>Multiple flow types</li>
+                        <li>Data logging & analysis</li>
+                        <li>Integration ready</li>
+                    </ul>
+                    <a href="#" class="solution-link">Learn More →</a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">📡</div>
+                    <h3 class="solution-title">Telemetry & Monitoring</h3>
+                    <p class="solution-description">Complete telemetry solutions including GRP complexes, GSM sensors, and cathodic protection systems.</p>
+                    <ul class="solution-features">
+                        <li>Remote data collection</li>
+                        <li>Real-time monitoring</li>
+                        <li>Automated reporting</li>
+                        <li>Emergency shutdown systems</li>
+                    </ul>
+                    <a href="#" class="solution-link">Learn More →</a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">🧲</div>
+                    <h3 class="solution-title">Magnetic Treatment</h3>
+                    <p class="solution-description">Advanced magnetic water treatment devices and converters to prevent scaling and optimize processes.</p>
+                    <ul class="solution-features">
+                        <li>Scale prevention</li>
+                        <li>Process optimization</li>
+                        <li>Maintenance reduction</li>
+                        <li>Energy efficiency</li>
+                    </ul>
+                    <a href="#" class="solution-link">Learn More →</a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">⚡</div>
+                    <h3 class="solution-title">Power & Energy</h3>
+                    <p class="solution-description">Reliable power solutions including inverters and converters for uninterrupted operations.</p>
+                    <ul class="solution-features">
+                        <li>Backup power systems</li>
+                        <li>Power conversion</li>
+                        <li>Grid independence</li>
+                        <li>System resilience</li>
+                    </ul>
+                    <a href="#" class="solution-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Enhance Your Industrial Safety?</h2>
+                <p>Get expert consultation on the right safety and process solutions for your facility.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button">Request Quote</a>
+                    <a href="#" class="cta-button-secondary">Download Catalog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Orion NPP</h3>
+                    <p>Scientific and Production Enterprise specializing in industrial safety and process equipment since 1991.</p>
+                    <p>Certified for Ukraine, Russia, and Belarus markets.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Solutions</h3>
+                    <p><a href="#">Gas Detection Systems</a></p>
+                    <p><a href="#">Leak Detection</a></p>
+                    <p><a href="#">Flow Measurement</a></p>
+                    <p><a href="#">Telemetry Solutions</a></p>
+                    <p><a href="#">Magnetic Treatment</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <p><a href="#">Technical Documentation</a></p>
+                    <p><a href="#">Product Catalogs</a></p>
+                    <p><a href="#">Certifications</a></p>
+                    <p><a href="#">Support & Service</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Ukraine</p>
+                    <p>Email: info@orion.com.ua</p>
+                    <p>Phone: Available on request</p>
+                    <p><a href="#">Request Information</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NPP Orion. All rights reserved. | Established 1991</p>
+            </div>
+        </div>
+    </footer>
     </div>
   );
 }
