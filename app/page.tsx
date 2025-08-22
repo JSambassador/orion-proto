@@ -46,7 +46,7 @@ export default function Home() {
                 <div class="hero-image">
                     <div class="device-showcase pulse">
                         <div class="device-placeholder">
-                            DOZOR-S Series<br>Gas Analyzer
+                            DOZOR-S Series Gas Analyzer
                         </div>
                         <h3>DOZOR-S Series</h3>
                         <p>Microprocessor-based gas analyzers with 150+ detectable substances</p>
