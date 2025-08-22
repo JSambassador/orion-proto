@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-     <!-- Header -->
     <header>
         <nav class="container">
             <a href="#" class="logo">ORION</a>
@@ -16,8 +15,6 @@ export default function Home() {
             <a href="#contact" class="cta-button">Get Quote</a>
         </nav>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -58,8 +55,6 @@ export default function Home() {
             </div>
         </div>
     </section>
-
-    <!-- Trust Section -->
     <section class="trust-section">
         <div class="container">
             <div class="trust-content">
@@ -74,8 +69,6 @@ export default function Home() {
             </div>
         </div>
     </section>
-
-    <!-- Solutions Section -->
     <section class="solutions" id="solutions">
         <div class="container">
             <div class="section-header">
@@ -164,8 +157,6 @@ export default function Home() {
             </div>
         </div>
     </section>
-
-    <!-- CTA Section -->
     <section class="cta-section" id="contact">
         <div class="container">
             <div class="cta-content">
@@ -178,8 +169,6 @@ export default function Home() {
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
